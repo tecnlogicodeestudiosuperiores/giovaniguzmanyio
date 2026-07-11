@@ -397,3 +397,127 @@ body {
     box-shadow: none;              
     mix-blend-mode: multiply;      
 }
+/* ========================================= */
+/*      FORMATO OFICIAL DE CARGA ACADÉMICA   */
+/* ========================================= */
+.documento-oficial-contenedor {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 25px;
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 11px;
+    color: #000000;
+}
+
+.tabla-doc-header {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.tabla-doc-header td {
+    border: none !important;
+    background: transparent !important;
+}
+
+.titulo-doc-principal {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+.doc-linea-matricula {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.doc-bloque-seccion {
+    background-color: #e2e8f0;
+    border: 1px solid #000000;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px 0;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.tabla-doc-datos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5px;
+}
+
+.tabla-doc-datos td {
+    border: 1px solid #000000 !important;
+    padding: 5px 8px;
+    background: #ffffff !important;
+    text-align: left;
+}
+
+.tabla-doc-carga {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0;
+}
+
+.tabla-doc-carga th {
+    background: #f1f5f9 !important;
+    color: #000000 !important;
+    font-weight: bold;
+    border: 1px solid #000000 !important;
+    padding: 6px 4px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.tabla-doc-carga td {
+    border: 1px solid #000000 !important;
+    padding: 5px 6px;
+    background: #ffffff !important;
+}
+
+/* Fuerza el fondo blanco e ignora el gris alternado de la boleta de calificaciones */
+.tabla-doc-carga tr:nth-child(even) td {
+    background-color: #ffffff !important;
+}
+
+.doc-leyenda-protesta {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+    font-style: italic;
+    line-height: 1.4;
+    background-color: #f8fafc;
+}
+
+.tabla-doc-firmas {
+    width: 100%;
+    margin-top: 50px;
+    border-collapse: collapse;
+}
+
+.tabla-doc-firmas td {
+    border: none !important;
+    text-align: center;
+    background: transparent !important;
+    vertical-align: bottom;
+}
+
+.linea-firma {
+    border-top: 1px solid #000000;
+    width: 80%;
+    margin: 0 auto 5px auto;
+}
+
+.sub-firma {
+    font-size: 10px;
+    color: #475569;
+}
+
+.text-center { text-align: center !important; }
+
