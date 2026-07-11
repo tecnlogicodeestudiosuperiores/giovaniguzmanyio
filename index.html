@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESCHI - Portal de Calificaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PANTALLA DE INICIO DE SESIÓN -->
+    <div id="login-page-container">
+        <header class="teschi-header">
+            <div class="logo-container">
+                <img src="https://blogspot.com" alt="Logo TESCHI" class="teschi-logo">
+            </div>
+            <h1>TECNOLÓGICO DE ESTUDIOS SUPERIORES DE CHIMALHUACÁN</h1>
+            <p class="siia-title">Sistema de Información Integral Administrativa (SIIA)</p>
+        </header>
+
+        <div class="login-main-content">
+            <div class="mascot-container">
+                <img src="https://gstatic.com" alt="Mascota TESCHI" class="teschi-mascot">
+            </div>
+
+            <div id="login-container" class="teschi-login-box">
+                <form id="login-form">
+                    <div class="input-group">
+                        <input type="text" id="matricula" placeholder="Usuario / Matrícula" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="Contraseña" required>
+                    </div>
+                    <button type="submit" class="btn-teschi-submit">Iniciar Sesión</button>
+                    <a href="#" class="forgot-link">¿Olvidó su Contraseña?</a>
+                    <p id="login-error" class="error-msg"></p>
+                </form>
+            </div>
+        </div>
+
+        <footer class="teschi-footer">
+            <p>C.Primavera S/N, Col. Santa María Nativitas, Chimalhuacán, Estado de México, C.P. 56330</p>
+            <p>Teléfonos: (55) 50-44-70-20, 50-44-41-31, 58-55-72-93, 58-52-74-26 E-mail: webmaster@teschi.edu.mx</p>
+        </footer>
+    </div>
+
+    <!-- PANEL DE CONTROL INTERNO INTERACTIVO -->
+    <div id="dashboard-container" class="teschi-dashboard hidden">
+        
+        <!-- BARRA LATERAL VERDE -->
+        <aside class="teschi-sidebar">
+            <div class="sidebar-logo">
+                <img src="https://blogspot.com" alt="Logo TESCHI">
+            </div>
+            
+            <div class="sidebar-user-info">
+                <p class="user-matricula-display" id="user-matricula">2025452046</p>
+                <div class="divider-line"></div>
+                <p class="user-name-display">YOVANI VÁZQUEZ GUZMÁN</p>
+                <p class="user-career-display">INGENIERÍA EN SISTEMAS COMPUTACIONALES</p>
+                <p class="user-semester-display">Segundo Semestre — excelente</p>
+            </div>
+
+            <nav class="sidebar-menu">
+                <button class="menu-btn" data-tab="tab-registro">Registro</button>
+                
+                <div class="submenu-container">
+                    <button class="menu-btn" id="btn-reportes-main">Reportes</button>
+                    <div class="submenu-content hidden" id="reportes-submenu">
+                        <button class="submenu-item" data-tab="tab-parciales">▸ Calificaciones Parciales</button>
+                        <button class="submenu-item" data-tab="tab-finales">▸ Calificaciones Finales</button>
+                        <button class="submenu-item" data-tab="tab-historial">▸ Historial Académico</button>
+                        <button class="submenu-item" data-tab="tab-tira">▸ Tira de materia</button>
+                    </div>
+                </div>
+
+                <button class="menu-btn" data-tab="tab-usuario">Usuario</button>
+                <button id="logout-btn" class="menu-btn logout-style">Salir</button>
+            </nav>
+        </aside>
+
+        <!-- PANEL DE INFORMACIÓN CENTRAL (CONTENEDOR BLANCO) -->
+        <main class="teschi-main-panel">
+            <div class="white-content-box">
+                
+                <!-- SECCIÓN: REGISTRO -->
+                <div id="tab-registro" class="tab-content hidden" style="font-size: 14px; line-height: 1.6; color: #334155;">
+                    <div class="boleta-header-box">📝 Registro de Inscripción</div>
+                    <div style="background-color: #c2e7be; text-align: center; padding: 6px; font-weight: bold; color: #14532d; font-size: 11px; margin-bottom: 20px; border-radius: 4px;">
+                        Periodo Escolar Vigente
+                    </div>
+                    <div style="padding: 15px; border-left: 4px solid #68ab59; background-color: #f8fafc; margin-bottom: 15px; border-radius: 0 4px 4px 0;">
+                        <p style="font-weight: bold; color: #14532d; margin-bottom: 5px;">Módulo de Reinscripción Escolar en Línea</p>
+                        <p style="font-size: 13px; color: #64748b;">Estimado estudiante, este apartado muestra la convocatoria y el estatus de tus trámites de inscripción actuales.</p>
+                    </div>
+                    <p style="margin-bottom: 12px;"><strong>Estatus del trámite:</strong> <span style="color: #16a34a; font-weight: bold;">Vigente y Autorizado</span></p>
+                    <p style="color: #64748b; font-style: italic;">Por el momento no se requieren acciones adicionales en este apartado del portal.</p>
+                </div>
+
+                <!-- SUB-SECCIÓN: CALIFICACIONES PARCIALES -->
+                <div id="tab-parciales" class="tab-content hidden">
+                    <div class="boleta-header-box">📁 Calificaciones Parciales</div>
+                    <div class="periodo-selector-bar">
+                        <span class="periodo-lbl">2026-1</span>
+                        <div class="periodo-dropdown-sim">
+                            <span>Selecciona un periodo para ver tus calificaciones | 2026-1</span>
+                            <span class="arrow-down">⌂</span>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="teschi-table-official">
+                            <thead>
+                                <tr>
+                                    <th class="col-num">N°</th>
+                                    <th class="col-docente">Docente</th>
+                                    <th class="col-materia">Materia</th>
+                                    <th class="col-parcial">Primer Parcial</th>
+                                    <th class="col-parcial">Segundo Parcial</th>
+                                    <th class="col-parcial">Tercer Parcial</th>
+                                    <th class="col-grupo">Grupo</th>
+                                </tr>
+                            </thead>
+                            <tbody id="grades-table-body"></tbody>
+                        </table>
+                    </div>
+                    <div id="promedio-semestre-container"></div>
+                </div>
+
+                <!-- SUB-SECCIÓN: CALIFICACIONES FINALES -->
+                <div id="tab-finales" class="tab-content hidden">
+                    <div class="boleta-header-box">📁 Calificaciones Finales</div>
+                    <div class="periodo-selector-bar">
+                        <span class="periodo-lbl">2026-1</span>
+                        <div class="periodo-dropdown-sim">
+                            <span>Selecciona un periodo para ver tus calificaciones | 2026-1</span>
+                            <span class="arrow-down">⌂</span>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="teschi-table-official">
+                            <thead>
+                                <tr>
+                                    <th class="col-num">N°</th>
+                                    <th class="col-materia">Materia</th>
+                                    <th class="col-parcial">Calificación Final</th>
+                                    <th class="col-grupo">Estatus</th>
+                                </tr>
+                            </thead>
+                            <tbody id="final-grades-table-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- SUB-SECCIÓN: HISTORIAL ACADÉMICO -->
+                <div id="tab-historial" class="tab-content hidden">
+                    <div class="boleta-header-box">📜 Historial Académico Completo</div>
+                    <p style="padding: 15px; color: #475569;">Resumen acumulado de créditos escolares y promedio general histórico.</p>
+                </div>
+
+                <!-- SUB-SECCIÓN: TIRA DE MATERIA -->
+                <div id="tab-tira" class="tab-content hidden">
+                    <div class="boleta-header-box">📋 Tira de Materias Cargadas</div>
+                    <p style="padding: 15px; color: #475569;">Carga académica oficial registrada para el ciclo escolar actual.</p>
+                </div>
+
+                <!-- SECCIÓN: USUARIO -->
+                <div id="tab-usuario" class="tab-content hidden">
+                    <div class="boleta-header-box">👤 Configuración de Cuenta</div>
+                    <p style="padding: 15px; color: #475569;">Datos personales del alumno y opciones de cambio de contraseña.</p>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
