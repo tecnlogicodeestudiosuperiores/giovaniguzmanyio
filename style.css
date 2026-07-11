@@ -401,13 +401,13 @@ body {
 /*      FORMATO OFICIAL DE CARGA ACADÉMICA   */
 /* ========================================= */
 .documento-oficial-contenedor {
-    background-color: #ffffff;
-    border: 1px solid #000000;
+    background-color: #ffffff !important;
+    border: 1px solid #000000 !important;
     padding: 25px;
     max-width: 850px;
     margin: 0 auto;
     font-size: 11px;
-    color: #000000;
+    color: #000000 !important;
 }
 
 .tabla-doc-header {
@@ -422,9 +422,9 @@ body {
 }
 
 .titulo-doc-principal {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
-    color: #000000;
+    color: #000000 !important;
     margin: 0;
     text-align: center;
 }
@@ -432,19 +432,23 @@ body {
 .doc-linea-matricula {
     font-size: 12px;
     margin-bottom: 10px;
+    color: #000000 !important;
 }
 
+/* Encabezados de sección grises con bordes negros */
 .doc-bloque-seccion {
-    background-color: #e2e8f0;
-    border: 1px solid #000000;
+    background-color: #ededed !important;
+    border: 1px solid #000000 !important;
     font-weight: bold;
     text-align: center;
-    padding: 3px 0;
+    padding: 4px 0;
     margin-top: 10px;
     text-transform: uppercase;
     font-size: 11px;
+    color: #000000 !important;
 }
 
+/* Fuerza las celdas y los bordes negros de la sección de datos */
 .tabla-doc-datos {
     width: 100%;
     border-collapse: collapse;
@@ -453,46 +457,53 @@ body {
 
 .tabla-doc-datos td {
     border: 1px solid #000000 !important;
-    padding: 5px 8px;
+    padding: 6px 8px !important;
     background: #ffffff !important;
     text-align: left;
+    color: #000000 !important;
 }
 
+/* DISEÑO DE LA TABLA DE ASIGNATURAS */
 .tabla-doc-carga {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse !important;
     margin-top: 0;
 }
 
+/* Encabezado gris claro de las columnas */
 .tabla-doc-carga th {
-    background: #f1f5f9 !important;
+    background: #ededed !important;
     color: #000000 !important;
     font-weight: bold;
     border: 1px solid #000000 !important;
-    padding: 6px 4px;
+    padding: 6px 4px !important;
     text-align: center;
-    font-size: 10px;
+    font-size: 11px;
 }
 
+/* Celdas internas con borde e ignorando el verde de la otra pantalla */
 .tabla-doc-carga td {
     border: 1px solid #000000 !important;
-    padding: 5px 6px;
+    padding: 5px 6px !important;
     background: #ffffff !important;
+    color: #000000 !important;
 }
 
-/* Fuerza el fondo blanco e ignora el gris alternado de la boleta de calificaciones */
+/* Evita que se herede el patrón de filas gris/azul del dashboard */
+.tabla-doc-carga tr td,
 .tabla-doc-carga tr:nth-child(even) td {
     background-color: #ffffff !important;
 }
 
 .doc-leyenda-protesta {
-    border: 1px solid #000000;
+    border: 1px solid #000000 !important;
     padding: 10px;
     text-align: center;
     margin-top: 15px;
-    font-style: italic;
+    font-style: normal;
     line-height: 1.4;
-    background-color: #f8fafc;
+    background-color: #ffffff !important;
+    color: #000000 !important;
 }
 
 .tabla-doc-firmas {
@@ -506,18 +517,18 @@ body {
     text-align: center;
     background: transparent !important;
     vertical-align: bottom;
+    color: #000000 !important;
 }
 
 .linea-firma {
-    border-top: 1px solid #000000;
+    border-top: 1px solid #000000 !important;
     width: 80%;
     margin: 0 auto 5px auto;
 }
 
 .sub-firma {
     font-size: 10px;
-    color: #475569;
+    color: #000000 !important;
 }
 
 .text-center { text-align: center !important; }
-
