@@ -8,11 +8,12 @@
     --btn-gray-hover: #cbd5e1;
 }
 
+/* Regla global para unificar el tipo de letra en todos los apartados */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -24,6 +25,7 @@ body {
     align-items: flex-start;
 }
 
+/* PÁGINA DE LOGIN INICIAL */
 #login-page-container {
     width: 100%;
     max-width: 900px;
@@ -56,13 +58,13 @@ body {
 }
 
 .teschi-header h1 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
 }
 
 .siia-title {
-    font-size: 15px;
+    font-size: 14px;
     font-style: italic;
     font-weight: bold;
     margin-top: 15px;
@@ -99,7 +101,7 @@ body {
     border-radius: 5px;
     text-align: center;
     outline: none;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .btn-teschi-submit {
@@ -110,7 +112,7 @@ body {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .forgot-link {
@@ -138,6 +140,7 @@ body {
     margin-top: 5px;
 }
 
+/* INTERFAZ INTERNA DESPUÉS DE LOGUEAR */
 .teschi-dashboard {
     display: flex;
     min-height: 100vh;
@@ -145,6 +148,7 @@ body {
     width: 100%;
 }
 
+/* BARRA LATERAL IZQUIERDA */
 .teschi-sidebar {
     width: 240px;
     padding: 20px 15px;
@@ -185,10 +189,11 @@ body {
 }
 
 .user-career-display {
-    font-size: 12px;
+    font-size: 11px;
     margin-bottom: 25px;
 }
 
+/* BOTONES DE MENÚ RECTANGULARES GRISES */
 .sidebar-menu {
     display: flex;
     flex-direction: column;
@@ -203,7 +208,7 @@ body {
     color: #475569;
     border: 1px solid #bbe1b3;
     text-align: left;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -222,6 +227,7 @@ body {
     color: #b91c1c; 
 }
 
+/* CAJA DESPLEGABLE (OPCIONES BLANCAS) */
 .submenu-content {
     display: flex;
     flex-direction: column;
@@ -253,6 +259,7 @@ body {
     background-color: #f0fdf4;
 }
 
+/* PANEL DERECHO BLANCO GIGANTE */
 .teschi-main-panel {
     flex-grow: 1;
     background-color: var(--teschi-green);
@@ -268,11 +275,12 @@ body {
     min-height: 80vh;
 }
 
+/* CONTENEDORES BOLETA REAL */
 .boleta-header-box {
     border: 1px solid #94d385;
     border-radius: 6px;
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
     color: #166534;
     display: flex;
@@ -309,6 +317,7 @@ body {
     color: #475569;
 }
 
+/* TABLA INSTITUCIONAL */
 .table-responsive {
     overflow-x: auto;
 }
@@ -353,6 +362,7 @@ body {
     display: none !important;
 }
 
+/* RESPONSIVO MÓVIL */
 @media (max-width: 768px) {
     .login-main-content {
         flex-direction: column;
@@ -369,6 +379,7 @@ body {
     }
 }
 
+/* AJUSTE DE LA IMAGEN INSTITUCIONAL DE LOGIN */
 .login-footer-image-container {
     margin-top: 15px;
     width: 100%;
