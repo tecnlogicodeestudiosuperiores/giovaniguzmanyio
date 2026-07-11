@@ -58,9 +58,12 @@ body {
 }
 
 .teschi-header h1 {
-    font-size: 22px;
+    font-family:'Times New Roman',Times, serif;
+    font-size: 24px;
     font-weight: bold;
     margin-top: 10px;
+    letter-spacing:0.5px;
+
 }
 
 .siia-title {
