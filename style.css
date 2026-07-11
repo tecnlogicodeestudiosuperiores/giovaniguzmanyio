@@ -326,6 +326,7 @@ body {
 }
 
 .teschi-table-official {
+    font-family:'Times New Roman',Times, serif;
     width: 100%;
     border-collapse: collapse;
     font-size: 13px; 
