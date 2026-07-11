@@ -402,7 +402,7 @@ body {
 /* ========================================= */
 .documento-oficial-contenedor {
     background-color: #ffffff !important;
-    border: 1px solid #000000 !important;
+    border: 1px solid #68ab59 !important; /* Borde verde institucional */
     padding: 25px;
     max-width: 850px;
     margin: 0 auto;
@@ -422,33 +422,35 @@ body {
 }
 
 .titulo-doc-principal {
-    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
     font-weight: bold;
-    color: #000000 !important;
+    color: #14532d !important; /* Verde pino oscuro */
     margin: 0;
     text-align: center;
+    letter-spacing: 0.5px;
 }
 
 .doc-linea-matricula {
     font-size: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: #000000 !important;
 }
 
-/* Encabezados de sección grises con bordes negros */
+/* BLOQUE DE SECCIÓN: Réplica del verde institucional con borde definido */
 .doc-bloque-seccion {
-    background-color: #ededed !important;
-    border: 1px solid #000000 !important;
+    background-color: #c2e7be !important; /* Verde pastel oficial de tus capturas */
+    border: 1px solid #68ab59 !important;   /* Borde verde medio */
     font-weight: bold;
     text-align: center;
-    padding: 4px 0;
-    margin-top: 10px;
+    padding: 5px 0;
+    margin-top: 12px;
     text-transform: uppercase;
     font-size: 11px;
-    color: #000000 !important;
+    color: #14532d !important; /* Letras verde oscuro */
 }
 
-/* Fuerza las celdas y los bordes negros de la sección de datos */
+/* Cuadrícula de datos personales y académicos */
 .tabla-doc-datos {
     width: 100%;
     border-collapse: collapse;
@@ -456,59 +458,58 @@ body {
 }
 
 .tabla-doc-datos td {
-    border: 1px solid #000000 !important;
+    border: 1px solid #cbd5e1 !important; /* Borde suave */
     padding: 6px 8px !important;
     background: #ffffff !important;
     text-align: left;
-    color: #000000 !important;
+    color: #334155 !important;
 }
 
-/* DISEÑO DE LA TABLA DE ASIGNATURAS */
+/* DISEÑO DE LA TABLA DE CARGA ACADÉMICA */
 .tabla-doc-carga {
     width: 100%;
     border-collapse: collapse !important;
     margin-top: 0;
 }
 
-/* Encabezado gris claro de las columnas */
+/* th: Encabezado idéntico al de tu tabla principal (Verde pino degradado) */
 .tabla-doc-carga th {
-    background: #ededed !important;
-    color: #000000 !important;
+    background: linear-gradient(to bottom, #1e4d38, #143527) !important; 
+    color: #ffffff !important;
     font-weight: bold;
-    border: 1px solid #000000 !important;
-    padding: 6px 4px !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 7px 4px !important;
     text-align: center;
     font-size: 11px;
 }
 
-/* Celdas internas con borde e ignorando el verde de la otra pantalla */
+/* td: Filas limpias con bordes definidos */
 .tabla-doc-carga td {
-    border: 1px solid #000000 !important;
-    padding: 5px 6px !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 6px 6px !important;
     background: #ffffff !important;
-    color: #000000 !important;
+    color: #334155 !important;
 }
 
-/* Evita que se herede el patrón de filas gris/azul del dashboard */
-.tabla-doc-carga tr td,
+/* Evita interferencias y asigna un patrón de líneas alternadas muy sutil (gris azulado claro) */
 .tabla-doc-carga tr:nth-child(even) td {
-    background-color: #ffffff !important;
+    background-color: #f8fafc !important; 
 }
 
 .doc-leyenda-protesta {
-    border: 1px solid #000000 !important;
-    padding: 10px;
+    border: 1px solid #a3dc95 !important;
+    padding: 12px;
     text-align: center;
     margin-top: 15px;
-    font-style: normal;
+    font-style: italic;
     line-height: 1.4;
-    background-color: #ffffff !important;
-    color: #000000 !important;
+    background-color: #f0fdf4 !important; /* Fondo verde éxito tenue */
+    color: #166534 !important;
 }
 
 .tabla-doc-firmas {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 60px;
     border-collapse: collapse;
 }
 
@@ -517,18 +518,18 @@ body {
     text-align: center;
     background: transparent !important;
     vertical-align: bottom;
-    color: #000000 !important;
+    color: #1e293b !important;
 }
 
 .linea-firma {
-    border-top: 1px solid #000000 !important;
-    width: 80%;
-    margin: 0 auto 5px auto;
+    border-top: 1px solid #68ab59 !important; /* Línea de firma en tono verde */
+    width: 75%;
+    margin: 0 auto 6px auto;
 }
 
 .sub-firma {
     font-size: 10px;
-    color: #000000 !important;
+    color: #64748b !important;
 }
 
 .text-center { text-align: center !important; }
